@@ -1,0 +1,28 @@
+
+# development
+alias ett='mate app config db lib public script test Capfile Gemfile Rakefile spec'
+alias sc='script/console'
+alias ss='script/server --debugger'
+alias sdc='script/dbconsole -p'
+alias t='testrb -Itest'
+alias rt='rake db:migrate; rake test'
+alias recent_migrations='ls db/migrate/ | tail | ruby -e "puts STDIN.read.gsub(/_/, \" \").gsub(/\.rb/, \"\")"'
+
+# git
+alias gst='git status'
+alias gd='git diff | mate'
+alias gdc='git diff --cached | mate'
+alias gb='git branch'
+alias gba='gb -a'
+alias gbr='gb -r'
+alias gp='git pull'
+alias gpr='git pull --rebase'
+alias latest_tag='ls -t .git/refs/tags/ | head -1'
+
+alias ls='ls -F'
+alias todo='mate ~/Dropbox/docs/todo.txt'
+
+alias mongod_start='mongod run --config /usr/local/Cellar/mongodb/1.4.2-x86_64/mongod.conf'
+alias redis_start='redis-server /usr/local/etc/redis.conf'
+alias redis_stop='cat /usr/local/var/run/redis.pid | xargs kill'
+alias resque_start='QUEUES=* rake environment resque:work'

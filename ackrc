@@ -1,0 +1,9 @@
+--ignore-dir=assets
+--ignore-dir=data
+--ignore-dir=log
+--ignore-dir=sass_output
+--ignore-dir=tmp
+--ignore-dir=vendor
+--type-add=css=.scss
+--type-add=html=.mustache
+--type-add=ruby=.builder
