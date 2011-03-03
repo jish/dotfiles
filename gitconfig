@@ -1,0 +1,6 @@
+[color]
+  status = auto
+[color "status"]
+  untracked = cyan
+  changed = green
+  added = yellow
