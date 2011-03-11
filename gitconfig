@@ -1,6 +1,9 @@
 [color]
   status = auto
+  diff = auto
 [color "status"]
   untracked = cyan
   changed = green
   added = yellow
+[alias]
+  co = checkout
