@@ -2,32 +2,31 @@
 [[ -s ~/.localrc ]] && . ~/.localrc
 
 git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
+  git branch 2> /dev/null | grep "^*" | awk '{ print "[" $2 "]" }'
 }
 
-# change_iterm_colors() {
-#   osascript -e "tell application \"iTerm\"\
-#     to tell the current terminal\
-#       to tell the current session\
-#         to set the background color to \"$1\""
-#   osascript -e "tell application \"iTerm\"\
-#     to tell the current terminal\
-#       to tell the current session\
-#         to set the foreground color to \"$2\""
+# set_color() {
+#   osascript -e "Tell application \"iTerm\"\
+#     to tell the current session of the current terminal\
+#     to set $1 color to \"$2\""
 # }
 # 
 # ssh() {
-#   change_iterm_colors blue white
-# 
+#   set_color background black
+#   set_color foreground white
 #   /usr/bin/ssh "$@"
-# 
-#   change_iterm_colors white black
+#   set_color background white
+#   set_color foreground black
 # }
 
 setopt PROMPT_SUBST
 export PS1='%2~$(git_branch)%# '
 
 export EDITOR='mate -w'
-export PATH=$HOME/bin:$PATH:/usr/local/sbin
+
+# Yes, I'm adding /usr/local/bin to path again.
+# I want it to show up before /usr/bin so I'm adding it to the front.
+# Not sure how to remove the other entry from the end, but alas, it works.
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
