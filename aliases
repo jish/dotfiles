@@ -5,7 +5,7 @@ alias sc='script/console'
 alias ss='script/server --debugger'
 alias sdc='script/dbconsole -p'
 alias t='testrb -Itest'
-alias rt='rake db:migrate; rake test'
+alias rt='rake db:migrate && time rake test'
 alias recent_migrations='ls db/migrate/ | tail | ruby -e "puts STDIN.read.gsub(/_/, \" \").gsub(/\.rb/, \"\")"'
 
 # git
