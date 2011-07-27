@@ -2,7 +2,7 @@
 [[ -s ~/.localrc ]] && . ~/.localrc
 
 git_branch() {
-  git branch 2> /dev/null | grep "^*" | awk '{ print "[" $2 "]" }'
+  git branch 2> /dev/null | grep "^*" | sed -e "s/\* \(.*\)/[\1]/"
 }
 
 # set_color() {
