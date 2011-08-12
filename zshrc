@@ -5,6 +5,10 @@ git_branch() {
   git branch 2> /dev/null | grep "^*" | sed -e "s/\* \(.*\)/[\1]/"
 }
 
+psg() {
+  ps wwwaux | egrep "($1|%CPU)" | grep -v grep
+}
+
 # set_color() {
 #   osascript -e "Tell application \"iTerm\"\
 #     to tell the current session of the current terminal\
