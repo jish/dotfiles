@@ -4,6 +4,7 @@
 --ignore-dir=tmp
 --ignore-dir=vendor
 --ignore-dir=dist
+--ignore-dir=docs
 --type-add=css=.scss
 --type-add=html=.mustache
 --type-add=html=.hdbs

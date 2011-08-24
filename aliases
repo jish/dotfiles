@@ -1,10 +1,11 @@
 
 # development
-alias ett='mate app config db lib public script test Capfile Gemfile Rakefile spec'
+alias ett='mate app config db lib public script test Capfile Gemfile Gemfile.lock Rakefile spec config.ru vendor/assets'
 alias sc='script/console'
 alias ss='script/server --debugger'
 alias sdc='script/dbconsole -p'
-alias t='time ruby -Ilib -Itest -e "ARGV.each { |f| load f }"'
+# alias t='time ruby -Ilib -Itest -e "ARGV.each { |f| load f }"'
+alias t='time testrb -Ilib -Itest'
 alias rt='rake db:migrate && time rake test'
 alias recent_migrations='ls db/migrate/ | tail | ruby -e "puts STDIN.read.gsub(/_/, \" \").gsub(/\.rb/, \"\")"'
 
