@@ -9,20 +9,6 @@ psg() {
   ps wwwaux | egrep "($1|%CPU)" | grep -v grep
 }
 
-# set_color() {
-#   osascript -e "Tell application \"iTerm\"\
-#     to tell the current session of the current terminal\
-#     to set $1 color to \"$2\""
-# }
-# 
-# ssh() {
-#   set_color background black
-#   set_color foreground white
-#   /usr/bin/ssh "$@"
-#   set_color background white
-#   set_color foreground black
-# }
-
 setopt PROMPT_SUBST
 export PS1='%2~$(git_branch)%# '
 
