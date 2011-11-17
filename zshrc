@@ -1,3 +1,6 @@
+
+export PGDATA="$HOME/.pgdata"
+
 [[ -s ~/.aliases ]] && . ~/.aliases
 [[ -s ~/.localrc ]] && . ~/.localrc
 
