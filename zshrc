@@ -9,7 +9,7 @@ git_branch() {
 }
 
 psg() {
-  ps wwwaux | egrep "($1|%CPU)" | grep -v grep
+  ps wwwaux | egrep -i "($1|%CPU)" | grep -v grep
 }
 
 setopt PROMPT_SUBST
