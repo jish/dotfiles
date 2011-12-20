@@ -13,7 +13,7 @@ psg() {
 }
 
 setopt PROMPT_SUBST
-export PS1='%2~$(git_branch)%# '
+export PROMPT='%2~$(git_branch)%# '
 
 export EDITOR='mate -w'
 
