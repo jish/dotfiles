@@ -4,6 +4,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Font
+set guifont=Monaco
+
 " Show line numbers
 set number
 
@@ -20,6 +23,9 @@ set hlsearch
 
 " Autoindent
 set autoindent
+
+" Show a long lines marker
+set colorcolumn=80
 
 " Map ⌘-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
