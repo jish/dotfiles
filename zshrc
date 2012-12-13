@@ -12,11 +12,14 @@ psg() {
   ps wwwaux | egrep -i "($1|%CPU)" | grep -v grep
 }
 
+autoload -Uz compinit
+compinit
+
 setopt PROMPT_SUBST
 export PROMPT='%2~$(git_branch)%# '
-
 export EDITOR='mate -w'
 
+# This is for homebrew
 # Yes, I'm adding /usr/local/bin to path again.
 # I want it to show up before /usr/bin so I'm adding it to the front.
 # Not sure how to remove the other entry from the end, but alas, it works.
