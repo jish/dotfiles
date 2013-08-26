@@ -24,5 +24,3 @@ export EDITOR='mate -w'
 # I want it to show up before /usr/bin so I'm adding it to the front.
 # Not sure how to remove the other entry from the end, but alas, it works.
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
