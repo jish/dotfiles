@@ -5,6 +5,7 @@
 --ignore-dir=vendor
 --ignore-dir=dist
 --ignore-dir=docs
+--ignore-dir=node_modules
 --type-add=css=.scss
 --type-add=html=.mustache
 --type-add=html=.hdbs
