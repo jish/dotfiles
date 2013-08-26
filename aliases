@@ -34,3 +34,4 @@ alias redis_stop='cat /usr/local/var/run/redis.pid | xargs kill'
 alias resque_start='VERBOSE=true QUEUES=* rake environment resque:no_fork resque:work'
 alias pgstart="pg_ctl -l $PGDATA/logfile start"
 alias pgstop='pg_ctl stop'
+alias gcgc='open -a "Google Chrome" --args --js-flags="--expose-gc"'
