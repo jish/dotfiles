@@ -5,3 +5,6 @@ showInvisibles = true
 
 wrapColumn = 80
 showWrapColumn = true
+
+[ .git/COMMIT_EDITMSG ]
+wrapColumn = 70
