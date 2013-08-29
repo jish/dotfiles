@@ -1,0 +1,7 @@
+tabSize = 2
+softTabs = true
+  
+showInvisibles = true
+
+wrapColumn = 80
+showWrapColumn = true
