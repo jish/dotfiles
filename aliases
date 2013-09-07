@@ -3,7 +3,6 @@
 alias ett='mate app config db lib public script test Capfile Gemfile Gemfile.lock Rakefile spec config.ru vendor/assets Changelog.md'
 alias sc='script/console --debugger'
 alias ss='script/server --debugger'
-alias fs='foreman start'
 alias rs='rails server'
 alias sdc='script/dbconsole -p'
 # alias t='time ruby -Ilib -Itest -e "ARGV.each { |f| load f }"'

@@ -12,6 +12,10 @@ psg() {
   ps wwwaux | egrep -i "($1|%CPU)" | grep -v grep
 }
 
+fs() {
+  ([ -s Procfile.dev ] && foreman start -f Procfile.dev) || foreman start
+}
+
 autoload -Uz compinit
 compinit
 
