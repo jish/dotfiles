@@ -28,6 +28,7 @@ alias latest_tag='ls -t .git/refs/tags/ | head -1'
 alias ls='ls -F'
 alias td='todo.sh'
 alias todo='td ls'
+alias wifi='open /System/Library/CoreServices/Wireless\ Diagnostics.app'
 
 alias mongod_start='mongod run --config /usr/local/Cellar/mongodb/1.4.2-x86_64/mongod.conf'
 alias redis_start='redis-server /usr/local/etc/redis.conf'
