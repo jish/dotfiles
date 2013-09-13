@@ -11,6 +11,7 @@ set header_cache = $HOME/.mail/.header_cache
 set use_from = 'yes'
 set envelope_from = 'yes'
 set pager_index_lines = 6
+unset markers
 
 set sendmail="/usr/local/bin/msmtp"
 
