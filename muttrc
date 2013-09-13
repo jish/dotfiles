@@ -1,0 +1,29 @@
+set sort = 'threads'
+set editor = 'mate -w'
+
+# Where is my mail?
+set mbox_type = Maildir
+set folder = $HOME/.mail
+set postponed="+postponed"
+set move = no
+set header_cache = $HOME/.mail/.header_cache
+
+set use_from = 'yes'
+set envelope_from = 'yes'
+set pager_index_lines = 6
+
+set sendmail="/usr/local/bin/msmtp"
+
+source ~/.mutt/colors/mutt-colors-solarized-dark-16.muttrc
+
+# Yes, we have to set both of these
+# set `alias_file` so mutt knows where to store new aliases
+# source the alias file so they're available
+set alias_file = ~/.mutt/aliases
+source $alias_file
+
+# Local customizations go in ~/.mutt/local
+source ~/.mutt/local
+# set spoolfile=+"foo/INBOX"
+# set realname = 'Joe Somebody'
+# set from = 'me@example.com'
