@@ -13,7 +13,7 @@ psg() {
 }
 
 fs() {
-  ([ -s Procfile.dev ] && foreman start -f Procfile.dev) || foreman start
+  ([ -s Procfile.dev ] && foreman start -f Procfile.dev $1 ) || foreman start $1
 }
 
 autoload -Uz compinit
