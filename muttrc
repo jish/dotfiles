@@ -5,6 +5,7 @@ set editor = 'mate -w'
 set mbox_type = Maildir
 set folder = $HOME/.mail
 set postponed="+postponed"
+set record="+sent"
 set move = no
 set header_cache = $HOME/.mail/.header_cache
 
