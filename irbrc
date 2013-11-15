@@ -17,3 +17,5 @@ IRB.conf[:PROMPT][:CUSTOM] = prompt
 IRB.conf[:PROMPT_MODE] = :CUSTOM
 
 IRB.conf[:USR_READLINE] = true
+IRB.conf[:SAVE_HISTORY] = 100
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-history"
