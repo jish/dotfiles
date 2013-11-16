@@ -12,6 +12,7 @@ alias recent_migrations='ls db/migrate/ | tail | ruby -e "puts STDIN.read.gsub(/
 alias bx='(bundle check || bundle install) && bundle exec'
 alias bcheck='bundle check || bundle install'
 alias irb='irb -Ilib'
+alias gua='bundle exec guard'
 
 # git
 alias gst='git status'
