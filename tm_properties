@@ -2,6 +2,7 @@ tabSize = 2
 softTabs = true
   
 showInvisibles = true
+invisiblesMap = "~ "
 
 wrapColumn = 80
 showWrapColumn = true
