@@ -22,6 +22,7 @@ compinit
 setopt PROMPT_SUBST
 export PROMPT='%2~$(git_branch)%# '
 export EDITOR='mate -w'
+export GOPATH="$HOME/code/go"
 
 # This is for homebrew
 # Yes, I'm adding /usr/local/bin to path again.
