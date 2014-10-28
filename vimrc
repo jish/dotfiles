@@ -15,6 +15,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Tab size is 2
+set ts=2
+
 " list tabs and trailing whitespace
 set list listchars=tab:\▸\ ,trail:·
 
