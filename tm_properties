@@ -7,5 +7,7 @@ invisiblesMap = "~ "
 wrapColumn = 80
 showWrapColumn = true
 
+include = "{$include,.ruby-version,.travis.yml}"
+
 [ .git/COMMIT_EDITMSG ]
 wrapColumn = 70
