@@ -16,6 +16,10 @@ fs() {
   ([ -s Procfile.dev ] && foreman start -f Procfile.dev $1 ) || foreman start $1
 }
 
+iterm_profile() {
+  echo -e "\033]50;SetProfile=$1\a"
+}
+
 autoload -Uz compinit
 compinit
 
