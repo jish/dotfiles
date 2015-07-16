@@ -8,7 +8,7 @@ wrapColumn = 80
 showWrapColumn = true
 
 include = "{$include,.ruby-version,.travis.yml}"
-exclude = "{$exclude,bower_components,node_modules}"
+exclude = "{$exclude,bower_components,node_modules,tmp,dist}"
 
 [ .git/COMMIT_EDITMSG ]
 wrapColumn = 70
