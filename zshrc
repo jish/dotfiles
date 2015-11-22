@@ -28,7 +28,9 @@ export PGDATA="$HOME/.pgdata"
 # Yes, I'm adding /usr/local/bin to path again.
 # I want it to show up before /usr/bin so I'm adding it to the front.
 # Not sure how to remove the other entry from the end, but alas, it works.
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+export PATH="$HOME/bin:$GOPATH/bin:$PATH"
 
 if [[ -s /usr/local/opt/chruby/share/chruby/chruby.sh ]]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
