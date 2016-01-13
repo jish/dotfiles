@@ -15,6 +15,15 @@ iterm_profile() {
   echo -e "\033]50;SetProfile=$1\a"
 }
 
+ssha() {
+  key=$1
+  if [[ -z ${key} ]]; then
+    key='id_rsa'
+  fi
+
+  ssh-add -t 28800 ~/.ssh/$key
+}
+
 autoload -Uz compinit
 compinit
 
