@@ -1,10 +1,9 @@
 
-# development
-alias ett='mate app config db lib public script test Capfile Gemfile Gemfile.lock Rakefile spec config.ru vendor/assets Changelog.md'
-alias sc='script/console --debugger'
-alias ss='script/server --debugger'
-alias rs='rails server'
-alias sdc='script/dbconsole -p'
+# Rails
+alias r='./bin/rails'
+alias rk='./bin/rake'
+
+# Ruby
 # alias t='time ruby -Ilib -Itest -e "ARGV.each { |f| load f }"'
 alias t='time testrb -Ilib -Itest'
 alias rt='rake db:migrate && time rake test'
