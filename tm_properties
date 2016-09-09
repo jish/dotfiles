@@ -12,3 +12,6 @@ exclude = "{$exclude,bower_components,dist,doc,log,node_modules,tmp}"
 
 [ .git/COMMIT_EDITMSG ]
 wrapColumn = 70
+
+[ Makefile ]
+softTabs = false
