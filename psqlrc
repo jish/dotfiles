@@ -1,0 +1,14 @@
+\encoding unicode
+
+-- Display how long it took to execute a query
+\timing
+
+-- Display `null` values so they are distinguishable from empty strings
+\pset null ∅
+
+-- Automatically display results in a table or vertically depending
+-- on terminal width
+\x auto
+
+-- Display the hostname and database psql is currently connected to
+\set PROMPT1 '%m:%/%#%R '
