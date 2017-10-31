@@ -29,9 +29,6 @@ compinit
 
 setopt PROMPT_SUBST
 export PROMPT='%2~$(git_branch)%# '
-export EDITOR='mate -w'
-export GOPATH="$HOME/code/go"
-export PGDATA="$HOME/.pgdata"
 
 # This is for homebrew
 # Yes, I'm adding /usr/local/bin to path again.
@@ -40,10 +37,6 @@ export PGDATA="$HOME/.pgdata"
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export PATH="$HOME/bin:$GOPATH/bin:$PATH"
-
-if [[ -s /usr/local/opt/chruby/share/chruby/chruby.sh ]]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-fi
 
 [[ -s ~/.aliases ]] && . ~/.aliases
 [[ -s ~/.localrc ]] && . ~/.localrc
