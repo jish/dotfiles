@@ -1,1 +1,5 @@
+# All .DS_Store files in any directory
 .DS_Store
+
+# .tm_properties files at the root of a project
+/.tm_properties
