@@ -24,8 +24,14 @@ ssha() {
   ssh-add -t 28800 ~/.ssh/$key
 }
 
+_ssha_comp() {
+  reply=( $(ls ~/.ssh) )
+}
+
 autoload -Uz compinit
 compinit
+
+compctl -K _ssha_comp ssha
 
 setopt PROMPT_SUBST
 export PROMPT='%2~$(git_branch)%# '
