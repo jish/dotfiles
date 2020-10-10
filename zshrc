@@ -36,13 +36,21 @@ compctl -K _ssha_comp ssha
 setopt PROMPT_SUBST
 export PROMPT='%2~$(git_branch)%# '
 
-# This is for homebrew
-# Yes, I'm adding /usr/local/bin to path again.
-# I want it to show up before /usr/bin so I'm adding it to the front.
-# Not sure how to remove the other entry from the end, but alas, it works.
-PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
-export PATH="$HOME/bin:$GOPATH/bin:$PATH"
+# Mac OS's path helper (called from `/etc/zprofile`) overwrites PATH
+# modifications made in `.zshenv`. For this reason, the PATH environment
+# variable is being defined in `.zshrc` instead of `.zshenv`.
+#
+# http://www.softec.lu/site/DevelopersCorner/MasteringThePathHelper
+#
+# Since we are prepending a new path each time, the last entry added will end
+# up as the first entry at the beginning of the path.
+#
+path=("/usr/local/sbin" "$path[@]")
+path=("${GOPATH}/bin" "$path[@]")
+path=("${HOME}/.cargo/bin" "$path[@]")
+path=("${HOME}/bin" "$path[@]")
 
 [[ -s ~/.aliases ]] && . ~/.aliases
 [[ -s ~/.localrc ]] && . ~/.localrc
+
+export PATH
