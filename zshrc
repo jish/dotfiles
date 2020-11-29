@@ -29,7 +29,11 @@ _ssha_comp() {
 }
 
 autoload -Uz compinit
-compinit
+# Run compinit in the background
+#
+# https://htr3n.github.io/2018/07/faster-zsh/
+#
+{ compinit } &!
 
 compctl -K _ssha_comp ssha
 
