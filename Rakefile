@@ -4,7 +4,6 @@ class Installer
   def install
     dotfiles.each do |src|
       dest = "~/.#{src}"
-
       source = File.expand_path(src)
       destination = File.expand_path(dest)
 
@@ -18,13 +17,12 @@ class Installer
   end
 
   def dotfiles
-    Dir['*'] - ['Rakefile', 'README.md']
+    Dir['*'] - ['Rakefile', 'README.md', 'off']
   end
 
   def link(source, destination)
     FileUtils.ln_s(source, destination)
   end
-
 end
 
 desc 'Install'
