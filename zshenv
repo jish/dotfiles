@@ -6,3 +6,7 @@ export VOLTA_HOME="${HOME}/.volta"
 if [[ -s /usr/local/opt/chruby/share/chruby/chruby.sh ]]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
 fi
+
+if [[ -f "${HOME}/.localenv" ]]; then
+  source "${HOME}/.localenv"
+fi
