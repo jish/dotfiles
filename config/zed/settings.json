@@ -1,0 +1,21 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "base_keymap": "TextMate",
+  "buffer_font_features": {
+    "calt": false
+  },
+  "format_on_save": "off",
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
+  "show_whitespaces": "all",
+  "tab_size": 2,
+  "theme": "Solarized Light",
+  "wrap_guides": [80, 100]
+}
