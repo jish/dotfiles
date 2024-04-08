@@ -3,7 +3,8 @@
     "context": "Editor",
     "bindings": {
       "alt-shift-left": "editor::SelectToPreviousWordStart",
-      "alt-shift-right": "editor::SelectToNextWordEnd"
+      "alt-shift-right": "editor::SelectToNextWordEnd",
+      "cmd-shift-d": "editor::DuplicateLine"
     }
   }
 ]
